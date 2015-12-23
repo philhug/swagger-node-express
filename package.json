@@ -1,8 +1,7 @@
 {
-  "name": "swagger-express-example”,
+  "name": "swagger-express-example",
   "version": "0.1.0",
   "description": "swagger-express example",
-  "main": "app.js",
   "dependencies": {
     "express": "3.5.1",
     "swagger-express": "^1.0.5"
@@ -12,7 +11,7 @@
     "jshint": "*"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Yaroslav Berkut",
   "license": "MIT"
