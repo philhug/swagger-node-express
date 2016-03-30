@@ -29,7 +29,7 @@ app.configure(function(){
   app.use(swagger.init(app, {
     apiVersion: '1.0',
     swaggerVersion: '1.0',
-    basePath: 'http://127.0.0.1:3000',
+    basePath: 'https://swagger-node-express.herokuapp.com:3000',
     swaggerURL: '/swagger',
     swaggerJSON: '/api-docs.json',
     swaggerUI: './swagger/',
