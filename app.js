@@ -22,13 +22,14 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.all('/*', function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
 
   app.use(swagger.init(app, {
     apiVersion: '1.0',
     swaggerVersion: '1.0',
-    basePath: 'http://localhost:3000',
+    basePath: 'http://127.0.0.1:3000',
     swaggerURL: '/swagger',
     swaggerJSON: '/api-docs.json',
     swaggerUI: './swagger/',
